@@ -171,16 +171,8 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-      },
-    },
-    animation: {
-      "meteor-effect": "meteor 5s linear infinite",
-      "loop-scroll": "loop-scroll 240s linear infinite"
-    },
-    keyframes: {
-      "loop-scroll": {
-        from: { transform: "translateY(0)" },
-        to: { transform: "translateY(-100%)" },
+        "meteor-effect": "meteor 5s linear infinite",
+        "loop-scroll": "loop-scroll 240s linear infinite"
       },
       meteor: {
         "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
@@ -190,7 +182,6 @@ const config = {
           opacity: "0",
         },
       },
-    },
   },
   plugins: [
     require("tailwindcss-animate"),

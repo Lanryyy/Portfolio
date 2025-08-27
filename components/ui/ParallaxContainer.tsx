@@ -46,19 +46,25 @@ export const ParallaxContainer: React.FC<ParallaxContainerProps> = ({
   );
 
   // Rotation transform
-  const rotate = rotateOnScroll
-    ? useTransform(delayedProgress, [0, 1], [0, 360 * speed])
-    : 0;
+  const rotate = useTransform(
+    delayedProgress, 
+    [0, 1], 
+    rotateOnScroll ? [0, 360 * speed] : [0, 0]
+  );
 
   // Scale transform
-  const scale = scaleOnScroll
-    ? useTransform(delayedProgress, [0, 0.5, 1], [0.8, 1.1, 0.8])
-    : 1;
+  const scale = useTransform(
+    delayedProgress, 
+    [0, 0.5, 1], 
+    scaleOnScroll ? [0.8, 1.1, 0.8] : [1, 1, 1]
+  );
 
   // Opacity transform
-  const opacity = fadeOnScroll
-    ? useTransform(delayedProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
-    : useTransform(delayedProgress, [0, 0.1, 0.9, 1], [0.7, 1, 1, 0.7]);
+  const opacity = useTransform(
+    delayedProgress, 
+    [0, 0.2, 0.8, 1], 
+    fadeOnScroll ? [0, 1, 1, 0] : [0.7, 1, 1, 0.7]
+  );
 
   return (
     <div ref={ref} className={className}>
