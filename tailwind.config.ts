@@ -43,6 +43,17 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        // Cores para análise de dados - tons avermelhados estratégicos
+        data: {
+          primary: "#DC2626",      // Vermelho principal para destaque
+          secondary: "#EF4444",    // Vermelho secundário
+          accent: "#F87171",       // Vermelho suave para elementos menores
+          warning: "#F59E0B",      // Amarelo para alertas
+          success: "#10B981",      // Verde para sucesso
+          info: "#3B82F6",         // Azul para informações
+          neutral: "#6B7280",      // Cinza neutro
+          dark: "#1F2937",         // Cinza escuro
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

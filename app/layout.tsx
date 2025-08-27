@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hendryck Portfolio",
-  description: "Moderno e minimalista",
+  title: "Henry Portfolio - Analista de Dados & BI",
+  description: "Portfólio profissional de Henry Matheus - Especialista em Business Intelligence e Análise de Dados",
 };
 
 export default function RootLayout({
@@ -16,6 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="icon" href="/koala-favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/koala-favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

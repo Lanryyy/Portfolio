@@ -1,19 +1,39 @@
+'use client';
+
 import { projects } from '@/Data'
-import React from 'react'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card'
 import Link from "next/link";
+import { ParallaxSection } from './ui/ParallaxSection';
+import { ParallaxContainer } from './ui/ParallaxContainer';
 
 
 const Projects = () => {
     return (
-        <div className='pt-40' id='projects'>
-            <h1 className='heading text-white'>
-                Meus {''}
-                <span className='text-purple'>Projetos Recentes</span>
-            </h1>
+        <ParallaxSection speed={0.1} className='pt-40' id='projects'>
+            <ParallaxContainer speed={0.2} triggerOnce>
+                <div className="text-center mb-16">
+                    <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-gradient-to-r from-red-600/20 to-green-600/20 rounded-full border border-red-600/30">
+                        <span className="text-2xl">💼</span>
+                        <span className="text-red-600 text-sm font-medium">Portfólio</span>
+                    </div>
+                    <h1 className='heading text-white mb-6'>
+                        Meus {''}
+                        <span className='text-red-600'>Projetos de BI</span>
+                    </h1>
+                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                        Soluções de análise de dados que transformaram a forma como empresas tomam decisões
+                    </p>
+                </div>
+            </ParallaxContainer>
             <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-8 mt-10'>
-                {projects.map(({ id, title, des, img, iconLists }) => (
-                    <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
+                {projects.map(({ id, title, des, img, iconLists }, index) => (
+                    <ParallaxContainer 
+                        key={id} 
+                        speed={0.1 + (index % 3) * 0.05} 
+                        delay={index * 0.1} 
+                        triggerOnce
+                        className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'
+                    >
                         <CardContainer className="inter-var">
                             <CardBody className="bg-[#130036] relative group/card border-[#4C298D] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                                 <CardItem
@@ -50,7 +70,7 @@ const Projects = () => {
                                     <CardItem
                                         translateZ={20}
                                         as={Link}
-                                        href="https://github.com/HendryckDev"
+                                        href="https://github.com/Lanryyy"
                                         target="__blank"
                                         className="px-6 py-4 rounded-xl bg-[#0F0129] dark:bg-white text-white text-sm font-bold flex justify-center items-center"
                                     >
@@ -59,10 +79,10 @@ const Projects = () => {
                                 </div>
                             </CardBody>
                         </CardContainer>
-                    </div>
+                    </ParallaxContainer>
                 ))}
             </div>
-        </div>
+        </ParallaxSection>
     )
 }
 

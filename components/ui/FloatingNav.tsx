@@ -55,21 +55,21 @@ export const FloatingNav = ({
         transition={{
           duration: 0.2,
         }}
-        className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border rounded-full z-[5000] px-10 py-5 items-center justify-center space-x-4 border-[#4C298D] backdrop-blur-[4px] bg-[#13003671]",
-          className
-        )}
+                  className={cn(
+            "flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full z-[5000] px-10 py-5 items-center justify-center space-x-4 border-red-600/30 backdrop-blur-[8px] bg-black/80 shadow-2xl shadow-red-600/20",
+            className
+          )}
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-white"
+              "relative items-center flex space-x-1 text-white hover:text-red-600 transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-red-600/10"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="text-sm !cursor-pointer">{navItem.name}</span>
+            <span className="text-sm !cursor-pointer font-medium">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
