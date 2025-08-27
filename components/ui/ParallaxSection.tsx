@@ -55,10 +55,22 @@ export const ParallaxSection: React.FC<ParallaxSectionProps> = ({
   const y = useTransform(scrollYProgress, [0, 1], direction === 'up' || direction === 'down' ? transformRange : [0, 0]);
   const x = useTransform(scrollYProgress, [0, 1], direction === 'left' || direction === 'right' ? transformRange : [0, 0]);
 
-  // Optional effects
-  const rotate = enableRotation ? useTransform(scrollYProgress, [0, 1], [0, 360 * speed]) : 0;
-  const scale = enableScale ? useTransform(scrollYProgress, [0, 1], [1, 1 + (0.2 * Math.abs(speed))]) : 1;
-  const opacity = enableOpacity ? useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]) : 1;
+  // Optional effects - always create hooks, but conditionally apply values
+  const rotate = useTransform(
+    scrollYProgress, 
+    [0, 1], 
+    enableRotation ? [0, 360 * speed] : [0, 0]
+  );
+  const scale = useTransform(
+    scrollYProgress, 
+    [0, 1], 
+    enableScale ? [1, 1 + (0.2 * Math.abs(speed))] : [1, 1]
+  );
+  const opacity = useTransform(
+    scrollYProgress, 
+    [0, 0.2, 0.8, 1], 
+    enableOpacity ? [0, 1, 1, 0] : [1, 1, 1, 1]
+  );
 
   return (
     <div ref={ref} className={className} id={id}>
