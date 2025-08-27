@@ -1,4 +1,4 @@
-# 🚀 Portfolio Moderno - Henry Matheus
+# 🚀 Portfolio - Henry Matheus
 
 Portfólio profissional moderno desenvolvido com Next.js, TypeScript e Tailwind CSS, focado em análise de dados e Business Intelligence.
 
@@ -17,10 +17,8 @@ Sou Henry Matheus, **Analista de Dados** apaixonado por transformar números em 
 
 - **Framework**: Next.js 14
 - **Linguagem**: TypeScript
-- **Estilização**: Tailwind CSS
+- **Estilização**: Tailwind
 - **Animações**: Framer Motion
-- **UI Components**: Componentes customizados
-- **Deploy**: Vercel (recomendado)
 
 ## 🏗️ Estrutura do Projeto
 
@@ -43,28 +41,6 @@ portfolio-modern/
 │   └── index.ts           # Configurações e dados
 └── public/                # Arquivos estáticos
 ```
-
-## 🚀 Como Executar
-
-1. **Clone o repositório**:
-```bash
-git clone https://github.com/SEU_USUARIO/portfolio-modern.git
-cd portfolio-modern
-```
-
-2. **Instale as dependências**:
-```bash
-npm install
-```
-
-3. **Execute o projeto**:
-```bash
-npm run dev
-```
-
-4. **Acesse**: http://localhost:3000
-
-## 📱 Responsividade
 
 O portfólio é totalmente responsivo e otimizado para:
 - 📱 Mobile (320px+)
@@ -92,25 +68,12 @@ O portfólio é totalmente responsivo e otimizado para:
 6. **Educação**: Formação acadêmica
 7. **Contato**: Informações e redes sociais
 
-## 🌐 Deploy
-
-Para fazer deploy na Vercel:
-
-1. Conecte seu repositório GitHub à Vercel
-2. Configure as variáveis de ambiente (se necessário)
-3. Deploy automático a cada push na branch main
 
 ## 📞 Contato
 
 - **Email**: contatohenrymath@hotmail.com
 - **LinkedIn**: [henry-matheus-611828192](https://www.linkedin.com/in/henry-matheus-611828192)
-- **GitHub**: [Seu usuário do GitHub]
+- **GitHub**: [Lanryyy]
 - **Localização**: Praia Grande - São Paulo
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
 
 ⭐ **Desenvolvido com dedicação por Henry Matheus** ⭐
