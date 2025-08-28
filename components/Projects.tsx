@@ -160,21 +160,7 @@ const Projects = () => {
                     viewport={{ once: true, margin: '-100px' }}
                     className='text-center mt-16'
                 >
-                    <div className='bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-2xl p-8 border border-slate-600/30'>
-                        <h3 className='text-2xl font-bold text-white mb-4'>
-                            Pronto para transformar seus dados?
-                        </h3>
-                        <p className='text-slate-300 mb-6 max-w-2xl mx-auto'>
-                            Vamos criar dashboards personalizados que transformem sua empresa com insights baseados em dados reais.
-                        </p>
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className='px-8 py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-red-500/25'
-                        >
-                            Vamos Conversar! 🚀
-                        </motion.button>
-                    </div>
+                   
                 </motion.div>
             </div>
         </section>
