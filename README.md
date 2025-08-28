@@ -1,5 +1,3 @@
-# 📊 **Welcome, I am Henry!**
-
 > **Analista de Dados & BI | Especialista em Power BI, Python e SQL | Frontend Developer**
 
 Transformando dados em insights estratégicos e criando soluções de Business Intelligence que fazem a diferença real nas empresas.
