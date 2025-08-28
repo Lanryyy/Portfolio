@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 
 const Projects = () => {
-    // Dados dos projetos de BI
     const biProjects = [
         {
             id: 1,

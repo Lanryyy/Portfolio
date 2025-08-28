@@ -9,25 +9,23 @@ interface DataVisualizationsProps {
 }
 
 export const DataVisualizations: React.FC<DataVisualizationsProps> = ({ className }) => {
-  // Gerar dados para gráficos com valores fixos para evitar erro de hidratação
   const chartData = useMemo(() => {
-    const barChart = Array.from({ length: 8 }, (_, i) => ({
+    const barChart = Array.from({ length: 6 }, (_, i) => ({
       id: i,
-      height: 20 + (i * 5) + (i % 3) * 10,
+      height: 20 + (i * 6) + (i % 2) * 8,
       delay: i * 0.2,
     }));
 
-    const lineChart = Array.from({ length: 12 }, (_, i) => ({
+    const lineChart = Array.from({ length: 8 }, (_, i) => ({
       id: i,
-      x: (i / 11) * 100,
-      y: 30 + (i % 4) * 8 + (i % 3) * 5,
+      x: (i / 7) * 100,
+      y: 30 + (i % 3) * 10 + (i % 2) * 5,
     }));
 
     const pieData = [
-      { value: 35, color: 'rgb(59, 130, 246)', offset: 0 },
-      { value: 25, color: 'rgb(239, 68, 68)', offset: 35 },
-      { value: 20, color: 'rgb(34, 197, 94)', offset: 60 },
-      { value: 20, color: 'rgb(168, 85, 247)', offset: 80 },
+      { value: 40, color: 'rgb(59, 130, 246)', offset: 0 },
+      { value: 30, color: 'rgb(239, 68, 68)', offset: 40 },
+      { value: 30, color: 'rgb(34, 197, 94)', offset: 70 },
     ];
 
     return { barChart, lineChart, pieData };
@@ -188,10 +186,10 @@ export const DataVisualizations: React.FC<DataVisualizationsProps> = ({ classNam
         </div>
       </div>
 
-      {/* Matriz de dados expandida no centro */}
+      {/* Matriz de dados (otimizada) */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-15">
-        <div className="grid grid-cols-12 gap-1">
-          {Array.from({ length: 144 }, (_, i) => (
+        <div className="grid grid-cols-8 gap-1">
+          {Array.from({ length: 64 }, (_, i) => (
             <motion.div
               key={i}
               className="w-1.5 h-1.5 rounded-sm"

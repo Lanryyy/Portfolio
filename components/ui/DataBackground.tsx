@@ -9,16 +9,15 @@ interface DataBackgroundProps {
 }
 
 export const DataBackground: React.FC<DataBackgroundProps> = ({ className }) => {
-  // Gerar dados uma vez usando useMemo para performance
   const dataElements = useMemo(() => {
     const elements = [];
     
-    // Pontos de dados flutuantes com posições fixas para evitar erro de hidratação
-    for (let i = 0; i < 35; i++) {
+    // Pontos de dados (otimizado para 25 elementos)
+    for (let i = 0; i < 25; i++) {
       elements.push({
         id: `point-${i}`,
         type: 'point',
-        x: (i * 3) % 100,
+        x: (i * 4) % 100,
         y: (i * 2.5) % 100,
         size: (i % 3) + 3,
         delay: i * 0.3,
@@ -26,37 +25,34 @@ export const DataBackground: React.FC<DataBackgroundProps> = ({ className }) => 
       });
     }
     
-    // Linhas de conexão com posições fixas para evitar erro de hidratação
-    for (let i = 0; i < 15; i++) {
+    // Linhas de conexão (otimizado para 10 elementos)
+    for (let i = 0; i < 10; i++) {
       elements.push({
         id: `line-${i}`,
         type: 'line',
-        x1: (i * 5) % 100,
-        y1: (i * 6) % 100,
-        x2: (i * 7) % 100,
-        y2: (i * 8) % 100,
+        x1: (i * 8) % 100,
+        y1: (i * 9) % 100,
+        x2: (i * 10) % 100,
+        y2: (i * 11) % 100,
         delay: i * 0.5,
         duration: 20 + (i % 3) * 10,
       });
     }
     
-    // Mais código flutuante com variedade maior
+    // Código flutuante (otimizado para 15 elementos)
     const codeSnippets = [
-      '01010101', '11001100', '10101010', '01100110', '11110000', '00001111',
-      'SELECT *', 'FROM data', 'WHERE value', 'GROUP BY', 'ORDER BY', 'HAVING',
       'Python', 'SQL', 'Power BI', 'React', 'pandas', 'numpy', 'matplotlib',
-      '{ }', '[ ]', '< >', '( )', 'def', 'class', 'import', 'return',
       'Dashboard', 'KPI', 'ETL', 'BI', 'Analytics', 'Insights',
-      'λ', 'Σ', 'π', '∞', '∆', '∈', '∀', '∃',
+      'λ', 'Σ', 'π', '∞',
     ];
     
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 15; i++) {
       elements.push({
         id: `code-${i}`,
         type: 'code',
         text: codeSnippets[i % codeSnippets.length],
-        x: (i * 4) % 100,
-        y: (i * 3) % 100,
+        x: (i * 6) % 100,
+        y: (i * 4) % 100,
         delay: i * 0.4,
         duration: 25 + (i % 4) * 5,
         fontSize: 0.5 + (i % 2) * 0.1,

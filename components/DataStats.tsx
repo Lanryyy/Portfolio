@@ -68,30 +68,26 @@ const DataStats = () => {
             >
 
               
-              {/* Efeito de brilho no hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/5 to-red-600/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
-              {/* Ícone da área */}
-              <div className="absolute top-4 right-4 text-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-300">
-                {area.icon}
-              </div>
-              
-              <div className="relative z-10 flex flex-col h-full">
-                {/* Ícone principal */}
-                <div className="text-4xl sm:text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {area.icon}
-                </div>
-                
-                <h3 className="text-white text-lg sm:text-xl font-semibold mb-3 group-hover:text-red-400 transition-colors duration-300">
-                  {area.title}
-                </h3>
-                
-                <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
-                  {area.description}
-                </p>
-                
-                {/* Skills - sempre no bottom */}
-                <div className="flex flex-wrap gap-2 mt-auto">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/5 to-red-600/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          
+                          <div className="absolute top-4 right-4 text-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-300">
+                            {area.icon}
+                          </div>
+                          
+                          <div className="relative z-10 flex flex-col h-full">
+                            <div className="text-4xl sm:text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                              {area.icon}
+                            </div>
+                            
+                            <h3 className="text-white text-lg sm:text-xl font-semibold mb-3 group-hover:text-red-400 transition-colors duration-300">
+                              {area.title}
+                            </h3>
+                            
+                            <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                              {area.description}
+                            </p>
+                            
+                            <div className="flex flex-wrap gap-2 mt-auto">
                   {area.skills.map((skill, skillIndex) => (
                     <span 
                       key={skillIndex}

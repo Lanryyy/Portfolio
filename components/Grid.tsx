@@ -8,7 +8,6 @@ import { ParallaxContainer } from './ui/ParallaxContainer';
 const Grid = () => {
     return (
         <ParallaxSection speed={0.05} className='pt-10 sm:pt-20 lg:pt-32 relative' id='about'>
-            {/* Fundo neutro para melhorar legibilidade */}
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-800/30 to-slate-900/40"></div>
             <ParallaxContainer speed={0.2} triggerOnce>
                 <div className="text-center mb-12 lg:mb-20 px-4 relative z-10">
