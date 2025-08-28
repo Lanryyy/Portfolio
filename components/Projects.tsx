@@ -9,7 +9,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Eletro",
-            description: "Dashboard de vendas e análise de produtos eletrônicos com métricas de performance e insights de mercado",
+            description: "Dashboard de vendas e análise de produtos eletrônicos com métricas de performance e insights",
             category: "Vendas & Eletrônicos",
             icon: "📱",
             iframeSrc: "https://app.powerbi.com/view?r=eyJrIjoiYThlYzJhMGEtMjFmMC00NjZhLTljMDMtMWJhZTdmYTczODBkIiwidCI6IjYyNDdjYzNkLTNlNGYtNGMzNi1iZGY2LWU4NzU4MTYyZTdhMyJ9",
@@ -32,6 +32,7 @@ const Projects = () => {
             icon: "📞",
             iframeSrc: "https://app.powerbi.com/view?r=eyJrIjoiNzVjMTllZTQtN2M5YS00NDI5LWIwNmYtNGY5YzI5NmM2ZGNkIiwidCI6IjYyNDdjYzNkLTNlNGYtNGMzNi1iZGY2LWU4NzU4MTYyZTdhMyJ9",
             features: ["Monitoramento de Rede", "Alertas em Tempo Real", "Análise de Performance"]
+            
         }
     ];
 

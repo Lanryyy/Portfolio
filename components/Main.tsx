@@ -48,7 +48,7 @@ const Main = () => {
                 <TypewriterEffectSmooth className='text-center text-[40px] sm:text-2xl md:text-5xl lg:text-6xl mb-4' words={words} />
                 
                 <p className='tracking-widest text-base text-center mb-4 text-red-400 max-w-2xl'>
-                    Analista de Dados apaixonado por transformar números em insights estratégicos com Power BI, Python e SQL.
+                    Analista de Dados e Desenvolvedor Frontend apaixonado por transformar números em insights estratégicos com Power BI, Python e SQL.
                 </p>
                 
                 <a href='#projects'>
