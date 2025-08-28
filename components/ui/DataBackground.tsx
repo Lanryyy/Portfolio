@@ -13,30 +13,30 @@ export const DataBackground: React.FC<DataBackgroundProps> = ({ className }) => 
   const dataElements = useMemo(() => {
     const elements = [];
     
-    // Mais pontos de dados flutuantes para melhor cobertura
+    // Pontos de dados flutuantes com posições fixas para evitar erro de hidratação
     for (let i = 0; i < 35; i++) {
       elements.push({
         id: `point-${i}`,
         type: 'point',
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 6 + 3,
-        delay: Math.random() * 15,
-        duration: Math.random() * 20 + 15,
+        x: (i * 3) % 100,
+        y: (i * 2.5) % 100,
+        size: (i % 3) + 3,
+        delay: i * 0.3,
+        duration: 15 + (i % 5) * 5,
       });
     }
     
-    // Mais linhas de conexão para criar uma rede mais densa
+    // Linhas de conexão com posições fixas para evitar erro de hidratação
     for (let i = 0; i < 15; i++) {
       elements.push({
         id: `line-${i}`,
         type: 'line',
-        x1: Math.random() * 100,
-        y1: Math.random() * 100,
-        x2: Math.random() * 100,
-        y2: Math.random() * 100,
-        delay: Math.random() * 8,
-        duration: Math.random() * 25 + 20,
+        x1: (i * 5) % 100,
+        y1: (i * 6) % 100,
+        x2: (i * 7) % 100,
+        y2: (i * 8) % 100,
+        delay: i * 0.5,
+        duration: 20 + (i % 3) * 10,
       });
     }
     
@@ -54,12 +54,12 @@ export const DataBackground: React.FC<DataBackgroundProps> = ({ className }) => 
       elements.push({
         id: `code-${i}`,
         type: 'code',
-        text: codeSnippets[Math.floor(Math.random() * codeSnippets.length)],
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        delay: Math.random() * 12,
-        duration: Math.random() * 30 + 25,
-        fontSize: Math.random() * 0.6 + 0.4,
+        text: codeSnippets[i % codeSnippets.length],
+        x: (i * 4) % 100,
+        y: (i * 3) % 100,
+        delay: i * 0.4,
+        duration: 25 + (i % 4) * 5,
+        fontSize: 0.5 + (i % 2) * 0.1,
       });
     }
     

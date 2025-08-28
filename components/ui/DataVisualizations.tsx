@@ -9,18 +9,18 @@ interface DataVisualizationsProps {
 }
 
 export const DataVisualizations: React.FC<DataVisualizationsProps> = ({ className }) => {
-  // Gerar dados para gráficos
+  // Gerar dados para gráficos com valores fixos para evitar erro de hidratação
   const chartData = useMemo(() => {
     const barChart = Array.from({ length: 8 }, (_, i) => ({
       id: i,
-      height: Math.random() * 60 + 20,
+      height: 20 + (i * 5) + (i % 3) * 10,
       delay: i * 0.2,
     }));
 
     const lineChart = Array.from({ length: 12 }, (_, i) => ({
       id: i,
       x: (i / 11) * 100,
-      y: Math.random() * 40 + 30,
+      y: 30 + (i % 4) * 8 + (i % 3) * 5,
     }));
 
     const pieData = [
@@ -205,12 +205,12 @@ export const DataVisualizations: React.FC<DataVisualizationsProps> = ({ classNam
               }}
               initial={{ opacity: 0 }}
               animate={{ 
-                opacity: [0, Math.random() * 0.8 + 0.2, 0],
+                opacity: [0, 0.6, 0],
                 scale: [1, 1.8, 1]
               }}
               transition={{
-                duration: Math.random() * 4 + 3,
-                delay: Math.random() * 8,
+                duration: 3 + (i % 3) * 2,
+                delay: (i % 8) * 0.5,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}

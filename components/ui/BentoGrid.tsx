@@ -248,22 +248,17 @@ export const BentoGridItem = ({
 
                 {/* Descrição */}
                 {description && (
-                    <div className="font-medium text-white/80 text-xs sm:text-sm md:text-base leading-relaxed">
+                    <div className="font-medium text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
                         {description}
                     </div>
                 )}
 
                 {/* Botão de explorar - Sempre visível em mobile */}
-                <div className="mt-4 opacity-100 sm:opacity-0 group-hover/bento:opacity-100 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-                        <span className="text-white/90 text-xs sm:text-sm font-medium">Explorar</span>
-                    </div>
-                </div>
+                
             </div>
 
             {/* Glow effect no hover */}
-            <div className="absolute inset-0 opacity-0 group-hover/bento:opacity-20 transition-opacity duration-500 bg-white rounded-2xl blur-xl pointer-events-none" />
+            <div className="absolute inset-0 opacity-0 group-hover/bento:opacity-0 transition-opacity duration-500 bg-white rounded-2xl blur-xl pointer-events-none" />
         </motion.div>
     );
 };
