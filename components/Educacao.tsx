@@ -75,13 +75,8 @@ const Educacao = () => {
                                         {item.description}
                                     </p>
                                     
-                                    {/* Indicador de progresso decorativo */}
-                                    <div className="mt-auto pt-4">
-                                        <div className="flex items-center gap-2 opacity-70 group-hover:opacity-100 transition-opacity">
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-                                            <span className="text-blue-400 text-xs font-medium">Concluído</span>
-                                        </div>
-                                    </div>
+                                   
+                                    
                                 </div>
                             </Button>
                         </motion.div>

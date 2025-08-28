@@ -127,7 +127,7 @@ export const navItems = [
     {
       id: 3,
       institution: "ETEC de São Paulo",
-      degree: "Técnico em Desenvolvimento de Sistemas",
+      degree: "Desenvolvimento de Sistemas",
       period: "2017 - 2019",
       description: "Formação técnica em programação, banco de dados e desenvolvimento de aplicações web e desktop",
       thumbnail: "/freelancer.png",

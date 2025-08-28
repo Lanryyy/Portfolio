@@ -3,35 +3,43 @@
 import { projects } from '@/Data'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card'
 import Link from "next/link";
-import { ParallaxSection } from './ui/ParallaxSection';
-import { ParallaxContainer } from './ui/ParallaxContainer';
+import { motion } from "framer-motion";
 
 
 const Projects = () => {
     return (
-        <ParallaxSection speed={0.1} className='pt-40' id='projects'>
-            <ParallaxContainer speed={0.2} triggerOnce>
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-gradient-to-r from-red-600/20 to-green-600/20 rounded-full border border-red-600/30">
-                        <span className="text-2xl">💼</span>
-                        <span className="text-red-600 text-sm font-medium">Portfólio</span>
-                    </div>
-                    <h1 className='heading text-white mb-6'>
-                        Meus {''}
-                        <span className='text-red-600'>Projetos de BI</span>
-                    </h1>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-                        Soluções de análise de dados que transformaram a forma como empresas tomam decisões
-                    </p>
+        <section className='pt-40' id='projects'>
+            <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, margin: '-100px' }}
+                className="text-center mb-16"
+            >
+                <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-gradient-to-r from-red-600/20 to-green-600/20 rounded-full border border-red-600/30">
+                    <span className="text-2xl">💼</span>
+                    <span className="text-red-600 text-sm font-medium">Portfólio</span>
                 </div>
-            </ParallaxContainer>
+                <h1 className='heading text-white mb-6'>
+                    Meus {''}
+                    <span className='text-red-600'>Projetos de BI</span>
+                </h1>
+                <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    Soluções de análise de dados que transformaram a forma como empresas tomam decisões
+                </p>
+            </motion.div>
             <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-8 mt-10'>
                 {projects.map(({ id, title, des, img, iconLists }, index) => (
-                    <ParallaxContainer 
-                        key={id} 
-                        speed={0.1 + (index % 3) * 0.05} 
-                        delay={index * 0.1} 
-                        triggerOnce
+                    <motion.div 
+                        key={id}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ 
+                            duration: 0.6, 
+                            delay: index * 0.2,
+                            ease: "easeOut" 
+                        }}
+                        viewport={{ once: true, margin: '-100px' }}
                         className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'
                     >
                         <CardContainer className="inter-var">
@@ -79,10 +87,10 @@ const Projects = () => {
                                 </div>
                             </CardBody>
                         </CardContainer>
-                    </ParallaxContainer>
+                    </motion.div>
                 ))}
             </div>
-        </ParallaxSection>
+        </section>
     )
 }
 

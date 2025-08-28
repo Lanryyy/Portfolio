@@ -1,79 +1,50 @@
-# 🚀 Portfolio - Henry Matheus
+<div align="center">
+  <h1> 📜 Portfólio Moderno </h1>
+</div>
+<br/>
+<p align="center">
+  <img src="public/home-modern.png" alt="Home do site" border="0"/>
+</p>
 
-Portfólio profissional moderno desenvolvido com Next.js, TypeScript e Tailwind CSS, focado em análise de dados e Business Intelligence.
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 
-## 🎯 Sobre
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJS"/>
 
-Sou Henry Matheus, **Analista de Dados** apaixonado por transformar números em insights estratégicos com Power BI, Python e SQL. Este portfólio apresenta minhas especialidades, experiências e projetos na área de BI e desenvolvimento.
+  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="NextJS"/>
+  
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS"/>
 
-## ✨ Principais Especialidades
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-%23323330.svg?style=for-the-badge&logo=visual-studio-code&logoColor=blue" alt="VScode"/>
 
-- 📊 **Business Intelligence**: Power BI, Tableau, SQL
-- 🐍 **Análise de Dados**: Python, Pandas, NumPy  
-- 💻 **Frontend Development**: React, Tailwind, TypeScript
-- 🔧 **Infraestrutura & QA**: CLI, TCP/IP, PowerShell
+  <img height=28 src="https://img.shields.io/badge/license-MIT-blue" alt="License">
 
-## 🛠️ Tecnologias Utilizadas
+</p>
 
-- **Framework**: Next.js 14
-- **Linguagem**: TypeScript
-- **Estilização**: Tailwind
-- **Animações**: Framer Motion
+<br>
 
-## 🏗️ Estrutura do Projeto
+## 🧑‍💻 Tecnologias
 
-```
-portfolio-modern/
-├── app/                    # App Router do Next.js
-│   ├── layout.tsx         # Layout principal
-│   ├── page.tsx           # Página inicial
-│   └── globals.css        # Estilos globais
-├── components/            # Componentes React
-│   ├── ui/                # Componentes de UI
-│   ├── Main.tsx           # Seção principal
-│   ├── Grid.tsx           # Grid de habilidades
-│   ├── Experiencia.tsx    # Experiências profissionais
-│   ├── Educacao.tsx       # Formação acadêmica
-│   ├── DataStats.tsx      # Especialidades
-│   ├── Projects.tsx       # Projetos
-│   └── Footer.tsx         # Rodapé
-├── Data/                  # Dados do portfólio
-│   └── index.ts           # Configurações e dados
-└── public/                # Arquivos estáticos
-```
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-O portfólio é totalmente responsivo e otimizado para:
-- 📱 Mobile (320px+)
-- 📱 Tablet (768px+)
-- 💻 Desktop (1024px+)
-- 🖥️ Large Desktop (1440px+)
+- [ReactJS](https://react.dev)
+- [NextJS](https://nextjs.org)
+- [TailwindCSS](https://tailwindcss.com)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Aceternity UI](https://ui.aceternity.com)
+- [Figma](http://figma.com/)
 
-## 🎨 Características
+## 💻 Projeto
 
-- ✅ Design moderno e profissional
-- ✅ Animações suaves com Framer Motion
-- ✅ Efeitos parallax
-- ✅ Componentes interativos
-- ✅ Performance otimizada
-- ✅ SEO-friendly
-- ✅ Acessibilidade
+Esse projeto foi construido com o proposito de servir como o meu portfólio pessoal, produzido inteiramente com o meu conhecimento nas tecnologias utilizadas.
 
-## 📊 Seções
+## 🌟 Features
 
-1. **Hero Section**: Apresentação pessoal
-2. **Especialidades**: Áreas de conhecimento
-3. **Sobre**: Grid de habilidades técnicas
-4. **Projetos**: Portfólio de trabalhos
-5. **Experiência**: Trajetória profissional
-6. **Educação**: Formação acadêmica
-7. **Contato**: Informações e redes sociais
+- [x] Animações totalmente otimizadas.
 
+- [x] Responsividade.
 
-## 📞 Contato
+## 📝 License
 
-- **Email**: contatohenrymath@hotmail.com
-- **LinkedIn**: [henry-matheus-611828192](https://www.linkedin.com/in/henry-matheus-611828192)
-- **GitHub**: [Lanryyy]
-- **Localização**: Praia Grande - São Paulo
-
-⭐ **Desenvolvido com dedicação por Henry Matheus** ⭐
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+---
