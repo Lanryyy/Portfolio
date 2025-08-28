@@ -1,5 +1,3 @@
-# 📊 **Welcome, I am Henry!**
-
 > **Analista de Dados & BI | Especialista em Power BI, Python e SQL | Frontend Developer**
 
 Transformando dados em insights estratégicos e criando soluções de Business Intelligence que fazem a diferença real nas empresas.
@@ -15,11 +13,11 @@ Transformando dados em insights estratégicos e criando soluções de Business I
 ## 📈 **Estatísticas do GitHub**
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&icon_color=FF6B6B&text_color=FFFFFF" alt="Henry's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Lanryyy&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&icon_color=FF6B6B&text_color=FFFFFF" alt="Henry's GitHub Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&text_color=FFFFFF" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lanryyy&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&text_color=FFFFFF" alt="Top Languages" />
 </div>
 
 ---
@@ -82,27 +80,20 @@ Transformando dados em insights estratégicos e criando soluções de Business I
 ## 📱 **Redes Sociais & Contato**
 
 <div align="center">
-  <a href="https://linkedin.com/in/SEU_LINKEDIN" target="_blank">
+  <a href="https://www.linkedin.com/in/henry-matheus-611828192/?trk=public_profile-settings_edit-profile-content&originalSubdomain=br" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://github.com/SEU_USUARIO" target="_blank">
+  <a href="https://github.com/Lanryyy" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="mailto:SEU_EMAIL@exemplo.com" target="_blank">
+  <a href="contatohenrymath@hotmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
-  <a href="https://SEU_PORTFOLIO.com" target="_blank">
+  <a href="https://portfolio-modern-1-24mh.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF6B6B?style=for-the-badge&logo=portfolio&logoColor=white" alt="Portfolio"/>
   </a>
 </div>
 
----
-
-## 📈 **Contribuições Recentes**
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SEU_USUARIO&theme=radical&hide_border=true&bg_color=0D1117&color=FF6B6B&line=FF6B6B&point=FFFFFF" alt="Contribution Graph" />
-</div>
 
 ---
 
@@ -116,17 +107,8 @@ Transformando dados em insights estratégicos e criando soluções de Business I
 
 ---
 
-## 📄 **Licença**
-
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir conforme necessário.
-
----
-
 **⭐ Se este perfil te ajudou, considere dar uma estrela nos repositórios!**
 
----
-
-*Desenvolvido com ❤️ e ☕ por Henry - Transformando dados em insights estratégicos*
 
 ---
 
@@ -230,59 +212,6 @@ components/
 
 ---
 
-## 🚀 **Como Executar o Projeto**
-
-### **Pré-requisitos**
-- Node.js 18+ 
-- npm ou yarn
-
-### **Instalação**
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/portfolio-modern.git
-
-# Entre na pasta
-cd portfolio-modern
-
-# Instale as dependências
-npm install
-
-# Execute em modo desenvolvimento
-npm run dev
-```
-
-### **Scripts Disponíveis**
-```bash
-npm run dev      # Servidor de desenvolvimento
-npm run build    # Build de produção
-npm run start    # Servidor de produção
-npm run lint     # Verificação de código
-```
-
----
-
-## 🎯 **Diferenciais do Projeto**
-
-### **Performance Otimizada**
-- **Componentes otimizados** com React.memo e useMemo
-- **Animações eficientes** baseadas em viewport
-- **Lazy loading** inteligente de recursos
-- **Bundle size** otimizado para carregamento rápido
-
-### **Experiência do Usuário**
-- **Navegação intuitiva** com scroll suave
-- **Animações contextuais** que guiam o usuário
-- **Responsividade perfeita** em todos os dispositivos
-- **Acessibilidade** com suporte a leitores de tela
-
-### **Código Limpo**
-- **TypeScript** para type safety
-- **ESLint** para padrões de código
-- **Componentes reutilizáveis** e bem documentados
-- **Arquitetura escalável** para futuras expansões
-
----
-
 ## 🌟 **Por que escolher este portfólio?**
 
 ### **Para Empresas:**
@@ -297,28 +226,6 @@ npm run lint     # Verificação de código
 - **Arquitetura de componentes** reutilizáveis
 - **Otimizações de performance** práticas
 
----
-
-## 📱 **Contato & Redes Sociais**
-
-- **LinkedIn:** [Seu LinkedIn]
-- **GitHub:** [Seu GitHub]
-- **Email:** [seu-email@exemplo.com]
-- **Portfolio:** [URL do seu portfolio]
-
----
-
-## 📄 **Licença**
-
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir conforme necessário.
-
----
-
-## 🙏 **Agradecimentos**
-
-Agradeço a toda a comunidade open source que tornou este projeto possível, especialmente aos criadores das bibliotecas e ferramentas utilizadas.
-
----
 
 **⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!**
 
