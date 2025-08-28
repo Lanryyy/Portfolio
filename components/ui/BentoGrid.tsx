@@ -42,28 +42,28 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    // Definir fundos específicos para cada item baseado no conteúdo
+    // Definir fundos neutros para melhor legibilidade
     const getBackgroundGradient = (id: number) => {
         switch (id) {
             case 1: // Desenvolvimento Frontend
-                return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
             case 2: // BI Stack
-                return 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
             case 3: // React/TypeScript
-                return 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
             case 4: // UI/UX Design
-                return 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
             case 5: // Responsive
-                return 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
             default:
-                return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                return 'linear-gradient(135deg, #374151 0%, #1f2937 100%)';
         }
     };
 
     return (
         <motion.div
             className={cn(
-                "relative overflow-hidden rounded-2xl group/bento hover:shadow-2xl transition-all duration-500 shadow-lg border border-white/10 hover:border-white/20 min-h-[250px] flex flex-col",
+                "relative overflow-hidden rounded-2xl group/bento hover:shadow-2xl transition-all duration-500 shadow-lg border border-white/20 hover:border-white/40 min-h-[250px] flex flex-col",
                 className
             )}
             style={{
@@ -73,9 +73,12 @@ export const BentoGridItem = ({
             transition={{ type: "spring", stiffness: 400, damping: 30 }}
         >
             {/* Overlay Pattern */}
-            <div className="absolute inset-0 opacity-10">
-                <div className="w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+            <div className="absolute inset-0 opacity-20">
+                <div className="w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.15),transparent_50%)]" />
             </div>
+            
+            {/* Camada adicional para melhorar legibilidade */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
 
             {/* Background Image with better overlay */}
             {img && (
@@ -83,9 +86,9 @@ export const BentoGridItem = ({
                     <img 
                         src={img} 
                         alt={`Background for ${title}`} 
-                        className={cn("object-cover object-center w-full h-full opacity-20", imgClassName)} 
+                        className={cn("object-cover object-center w-full h-full opacity-15", imgClassName)} 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 </div>
             )}
 
@@ -242,13 +245,13 @@ export const BentoGridItem = ({
                 !titleClassName && "justify-end"
             )}>
                 {/* Título */}
-                <div className="font-bold text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-tight mb-2">
+                <div className="font-black text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-tight mb-2 drop-shadow-lg">
                     {title}
                 </div>
 
                 {/* Descrição */}
                 {description && (
-                    <div className="font-medium text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
+                    <div className="font-semibold text-white text-xs sm:text-sm md:text-base leading-relaxed drop-shadow-md">
                         {description}
                     </div>
                 )}
