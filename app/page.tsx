@@ -1,3 +1,5 @@
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 import Experiencia from "@/components/Experiencia";
 import Educacao from "@/components/Educacao";
 import Footer from "@/components/Footer";
@@ -18,9 +20,11 @@ export default function Home() {
         <Main />
         <DataStats />
         <Grid />
+        <Skills />
         <Projects />
         <Experiencia />
         <Educacao />
+        <Contact />
         <Footer />
       </div>
     </main>

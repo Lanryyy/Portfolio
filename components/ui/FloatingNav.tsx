@@ -55,10 +55,10 @@ export const FloatingNav = ({
         transition={{
           duration: 0.2,
         }}
-                  className={cn(
-            "flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full z-[5000] px-10 py-5 items-center justify-center space-x-4 border-red-600/30 backdrop-blur-[8px] bg-black/80 shadow-2xl shadow-red-600/20",
-            className
-          )}
+        className={cn(
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full z-[5000] px-10 py-5 items-center justify-center space-x-4 border-white/10 backdrop-blur-md bg-black-100/70 shadow-xl shadow-purple-500/10",
+          className
+        )}
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link

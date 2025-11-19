@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   title: "Henry Portfolio - Analista de Dados & BI",
@@ -20,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/koala-favicon.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/koala-favicon.svg" type="image/svg+xml" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased bg-black-100`}>{children}</body>
     </html>
   );
 }

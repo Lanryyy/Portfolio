@@ -19,23 +19,28 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-outfit)", "var(--font-inter)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
+      },
       colors: {
         black: {
           DEFAULT: "#000",
-          100: "#060018",
-          200: "rgba(17, 25, 40, 0.75)",
+          100: "#020617", // Deep Space Black (Slate-950 based)
+          200: "#0f172a", // Slate-900
           300: "rgba(255, 255, 255, 0.125)",
         },
         white: {
           DEFAULT: "#FFF",
-          100: "#BEC1DD",
-          200: "#C1C2D3",
-          300: "#CBACF9"
+          100: "#E2E8F0", // Slate-200
+          200: "#CBD5E1", // Slate-300
+          300: "#94A3B8"  // Slate-400
         },
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#CBACF9",
+        purple: "#A78BFA", // Violet-400
+        cyan: "#22D3EE",   // Cyan-400
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
