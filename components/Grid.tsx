@@ -23,7 +23,7 @@ const Grid = () => {
 
           <div className="relative z-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
-              Resumo <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Profissional</span>
+              Resumo <span className="text-blue-400">Profissional</span>
             </h2>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl">

@@ -20,7 +20,7 @@ const Educacao = () => {
           className="text-center mb-14"
         >
           <h2 className="heading text-white mb-4">
-            Formação <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Acadêmica</span>
+            Formação <span className="text-blue-400">Acadêmica</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Educação contínua em tecnologia e análise de dados

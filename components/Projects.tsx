@@ -80,7 +80,7 @@ const Projects = () => {
       >
         <h2 className="heading text-white mb-4">
           Dashboards de{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="text-blue-400">
             Business Intelligence
           </span>
         </h2>

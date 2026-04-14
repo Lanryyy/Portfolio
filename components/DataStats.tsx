@@ -49,7 +49,7 @@ const DataStats = () => {
           className="text-center mb-16"
         >
           <h2 className="heading text-white mb-4">
-            Áreas de <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Atuação</span>
+            Áreas de <span className="text-blue-400">Atuação</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Visão end-to-end do pipeline de dados — da extração à tomada de decisão
@@ -72,7 +72,7 @@ const DataStats = () => {
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-4xl group-hover:scale-110 transition-transform duration-300">{area.icon}</span>
                   <div className="text-right">
-                    <div className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    <div className="text-xl font-bold text-blue-400">
                       {area.metric}
                     </div>
                     <div className="text-[9px] text-slate-500 uppercase tracking-wider font-medium">

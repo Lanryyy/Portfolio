@@ -31,7 +31,7 @@ const Main = () => {
             className='text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight'
           >
             <span className="text-white">Henry </span>
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Matheus</span>
+            <span className="text-blue-400">Matheus</span>
           </motion.h1>
 
           <motion.p
@@ -70,7 +70,7 @@ const Main = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className='text-2xl mb-2 block'>{metric.icon}</span>
-                <div className='text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent'>
+                <div className='text-2xl sm:text-3xl font-bold text-blue-400'>
                   {metric.value}
                 </div>
                 <div className='text-[10px] sm:text-xs text-slate-500 mt-1 leading-tight font-medium'>

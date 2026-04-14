@@ -14,7 +14,7 @@ const Experiencia = () => {
           className="text-center mb-16"
         >
           <h2 className="heading text-white mb-4">
-            Experiência <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Profissional</span>
+            Experiência <span className="text-blue-400">Profissional</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Trajetória de crescimento — de infraestrutura a análise de dados e BI

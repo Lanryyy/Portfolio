@@ -14,7 +14,7 @@ const Contact = () => {
           className="text-center"
         >
           <h2 className="heading text-white mb-4">
-            Vamos <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Conversar?</span>
+            Vamos <span className="text-blue-400">Conversar?</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-4">
             Precisa transformar dados em decisões estratégicas? Vamos discutir como posso contribuir.
