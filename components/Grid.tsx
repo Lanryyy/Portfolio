@@ -1,53 +1,58 @@
 'use client';
 
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
-import { gridItems } from '@/Data'
-import { ParallaxSection } from './ui/ParallaxSection';
-import { ParallaxContainer } from './ui/ParallaxContainer';
+import { motion } from 'framer-motion';
 
 const Grid = () => {
-    return (
-        <ParallaxSection speed={0.05} className='pt-10 sm:pt-20 lg:pt-32 relative' id='about'>
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-800/30 to-slate-900/40"></div>
-            <ParallaxContainer speed={0.2} triggerOnce>
-                <div className="text-center mb-12 lg:mb-20 px-4 relative z-10">
-                    <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-gradient-to-r from-red-600/30 to-blue-600/30 rounded-full border border-red-600/50 backdrop-blur-sm shadow-lg">
-                        <span className="text-2xl">🚀</span>
-                        <span className="text-red-600 text-sm font-semibold">Frontend Development</span>
-                    </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
-                        <span className="text-red-500">Minha</span> Abordagem de Desenvolvimento
-                    </h2>
-                    <p className="text-slate-200 text-base sm:text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
-                        Desenvolvimento frontend moderno focado em performance, acessibilidade e experiência do usuário excepcional
-                    </p>
-                </div>
-            </ParallaxContainer>
-            <ParallaxContainer speed={0.1} className="relative px-4">
-                <BentoGrid>
-                    {gridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg }, index) => (
-                        <ParallaxContainer 
-                            key={id}
-                            speed={0.05 + (index % 4) * 0.02} 
-                            delay={index * 0.1} 
-                            triggerOnce
-                        >
-                            <BentoGridItem 
-                                id={id} 
-                                title={title} 
-                                description={description} 
-                                className={className} 
-                                img={img} 
-                                imgClassName={imgClassName} 
-                                titleClassName={titleClassName} 
-                                spareImg={spareImg} 
-                            />
-                        </ParallaxContainer>
-                    ))}
-                </BentoGrid>
-            </ParallaxContainer>
-        </ParallaxSection>
-    )
-}
+  const summary = [
+    "3+ anos em Business Intelligence e Análise de Dados",
+    "Engenharia da Computação + Sistemas de Informação",
+    "Experiência em telecomunicações de grande porte",
+    "Visão end-to-end: extração → transformação → visualização",
+  ];
 
-export default Grid
+  return (
+    <section className='py-16 relative' id='summary'>
+      <div className="max-w-5xl mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative bg-gradient-to-br from-white/[0.03] to-white/[0.01] backdrop-blur-md border border-white/[0.08] rounded-3xl p-8 sm:p-12"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-cyan-500/5 rounded-3xl" />
+
+          <div className="relative z-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+              Resumo <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Profissional</span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl">
+              Analista de Dados com foco em <span className="text-blue-400 font-semibold">BI, ETL e automação</span>,
+              transformando dados em decisões estratégicas com Power BI, Python e SQL avançado.
+              Histórico comprovado na criação de dashboards executivos, otimização de pipelines e
+              redução de custos operacionais em ambientes de telecomunicações.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {summary.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-3 text-sm text-slate-400"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                  {item}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Grid;

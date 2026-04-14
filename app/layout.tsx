@@ -7,8 +7,15 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Henry Portfolio - Analista de Dados & BI",
-  description: "Portfólio profissional de Henry Matheus - Especialista em Business Intelligence e Análise de Dados",
+  title: "Henry Matheus — Analista de Dados | BI & Analytics",
+  description: "Analista de Dados com 3+ anos de experiência em Business Intelligence, ETL e automação. Power BI, Python, SQL. Dashboards executivos e insights estratégicos.",
+  keywords: "analista de dados, power bi, python, sql, business intelligence, etl, data analyst, dashboards",
+  openGraph: {
+    title: "Henry Matheus — Analista de Dados | BI & Analytics",
+    description: "Transformando dados complexos em decisões estratégicas com Power BI, Python e SQL.",
+    type: "website",
+    locale: "pt_BR",
+  },
 };
 
 export default function RootLayout({

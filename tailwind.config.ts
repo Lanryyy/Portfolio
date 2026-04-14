@@ -39,7 +39,7 @@ const config: Config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#A78BFA", // Violet-400
+        purple: "#3B82F6", // Blue-500 (brand)
         cyan: "#22D3EE",   // Cyan-400
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
