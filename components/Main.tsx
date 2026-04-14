@@ -9,9 +9,8 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 const Main = () => {
   return (
     <div className='pb-5 pt-16 relative min-h-[100vh] flex items-center'>
-      <DataBackground className="fixed inset-0 w-full h-full z-0" />
-      <DataVisualizations className="fixed inset-0 w-full h-full z-1" />
-      <div className="fixed inset-0 w-full h-full bg-gradient-to-b from-black/20 via-transparent to-black/30 z-2" />
+      <DataBackground className="absolute inset-0 w-full h-full z-0" />
+      <DataVisualizations className="absolute inset-0 w-full h-full z-1" />
 
       <div className='flex justify-center relative w-full z-10'>
         <div className='max-w-[89vw] md:max-w-4xl lg:max-w-[70vw] flex flex-col items-center justify-center text-white'>
