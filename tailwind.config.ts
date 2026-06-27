@@ -7,7 +7,7 @@ const config: Config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./data/**/*.{ts,tsx}",
+    "./Data/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -39,8 +39,7 @@ const config: Config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#3B82F6", // Blue-500 (brand)
-        cyan: "#22D3EE",   // Cyan-400
+        brand: "#3B82F6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

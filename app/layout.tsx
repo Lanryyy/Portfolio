@@ -7,12 +7,15 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Henry Matheus — Analista de Dados | BI & Analytics",
-  description: "Analista de Dados com 3+ anos de experiência em Business Intelligence, ETL e automação. Power BI, Python, SQL. Dashboards executivos e insights estratégicos.",
-  keywords: "analista de dados, power bi, python, sql, business intelligence, etl, data analyst, dashboards",
+  title: "Henry Matheus — Analista de Dados | Python, SQL, ERP & Power BI",
+  description:
+    "Analista de Dados com foco em automações Python, SQL, Power BI, ERP, Deneb, HTML Content e transformação de dados operacionais em indicadores de negócio.",
+  keywords:
+    "analista de dados, data analyst, power bi, python, sql, erp, totvs, abr telecom, deneb, html content, dax, power query, automação, business intelligence",
   openGraph: {
-    title: "Henry Matheus — Analista de Dados | BI & Analytics",
-    description: "Transformando dados complexos em decisões estratégicas com Power BI, Python e SQL.",
+    title: "Henry Matheus — Analista de Dados | Python, SQL, ERP & Power BI",
+    description:
+      "Automação, ERP, SQL e BI avançado para transformar dados operacionais em decisões práticas.",
     type: "website",
     locale: "pt_BR",
   },

@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import { Meteors } from "./meteors";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const BentoGrid = ({
     className,
@@ -83,10 +84,12 @@ export const BentoGridItem = ({
             {/* Background Image with better overlay */}
             {img && (
                 <div className="absolute inset-0 w-full h-full">
-                    <img 
-                        src={img} 
-                        alt={`Background for ${title}`} 
-                        className={cn("object-cover object-center w-full h-full opacity-15", imgClassName)} 
+                    <Image
+                        src={img}
+                        alt={typeof title === "string" ? `Background for ${title}` : "Background visual"}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className={cn("object-cover object-center opacity-15", imgClassName)}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 </div>

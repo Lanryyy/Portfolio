@@ -1,43 +1,135 @@
 export const navItems = [
   { name: "Sobre", link: "#about" },
-  { name: "Dashboards", link: "#projects" },
+  { name: "Cases", link: "#projects" },
   { name: "Carreira", link: "#experience" },
   { name: "Formação", link: "#education" },
   { name: "Contato", link: "#contact" },
 ];
 
 export const heroMetrics = [
-  { value: "500K+", label: "Registros Processados/mês", icon: "📊" },
-  { value: "12+", label: "Dashboards Executivos", icon: "📈" },
-  { value: "60%", label: "Redução em Queries SQL", icon: "⚡" },
-  { value: "20h", label: "Salvas/mês em Automação", icon: "🤖" },
+  { value: "500K+", label: "Registros tratados/mês", icon: "📊" },
+  { value: "12+", label: "Dashboards e relatórios", icon: "📈" },
+  { value: "60%", label: "Redução em queries SQL", icon: "⚡" },
+  { value: "20h", label: "Salvas/mês com automação", icon: "🤖" },
+];
+
+export const profileHighlights = [
+  "Praia Grande-SP",
+  "Remoto/Híbrido SP e Baixada",
+  "Python, SQL, Power BI",
+  "ERP, BI e Automações",
 ];
 
 export const skillCategories = [
   {
-    title: "Dados & Business Intelligence",
+    title: "BI & Visualização Avançada",
     icon: "📊",
-    skills: ["Power BI", "DAX", "Power Query", "Tableau", "Data Storytelling", "KPIs", "Data Visualization"],
+    skills: ["Power BI", "DAX", "Power Query", "Deneb", "HTML Content", "KPIs", "Data Storytelling"],
     color: "blue",
   },
   {
-    title: "Programação & Automação",
+    title: "Python & Automações",
     icon: "🐍",
-    skills: ["Python", "pandas", "NumPy", "PySpark", "SQL Avançado", "Bash", "PowerShell"],
+    skills: ["Python", "pandas", "APIs", "Chatbots", "Excel/CSV", "Logs", "PowerShell"],
     color: "emerald",
   },
   {
-    title: "Banco de Dados & Cloud",
+    title: "SQL & Engenharia de Dados",
     icon: "☁️",
-    skills: ["SQL Server", "PostgreSQL", "BigQuery", "ETL/ELT", "Data Pipeline", "Data Warehouse"],
+    skills: ["SQL Server", "PostgreSQL", "BigQuery", "ETL/ELT", "Data Quality", "Data Warehouse"],
     color: "cyan",
   },
   {
-    title: "Desenvolvimento Web",
-    icon: "💻",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML5", "CSS3"],
-    color: "slate",
-    isSecondary: true,
+    title: "ERP & Dados Operacionais",
+    icon: "🏢",
+    skills: ["TOTVS", "ERP proprietário", "ABR Telecom", "SQL/CSV/API", "KPIs operacionais", "Auditoria de dados"],
+    color: "amber",
+  },
+];
+
+export const focusAreas = [
+  {
+    title: "Automações & APIs",
+    icon: "🤖",
+    description: "Rotinas em Python para coletar dados, validar regras, gerar arquivos, registrar logs e reduzir tarefas manuais.",
+    skills: ["Python", "APIs", "pandas", "logs"],
+    metric: "20h",
+    metricLabel: "Salvas/mês",
+  },
+  {
+    title: "ERP & Operações",
+    icon: "🏢",
+    description: "Leitura e organização de dados de ERP, sistemas internos e plataformas setoriais para indicadores de negócio.",
+    skills: ["TOTVS", "ABR Telecom", "ERP", "SQL"],
+    metric: "ERP",
+    metricLabel: "Dados reais",
+  },
+  {
+    title: "BI Avançado",
+    icon: "📊",
+    description: "Dashboards em Power BI com DAX, Power Query, Deneb e HTML Content para leitura executiva e operacional.",
+    skills: ["Power BI", "DAX", "Deneb", "HTML"],
+    metric: "12+",
+    metricLabel: "Dashboards",
+  },
+  {
+    title: "SQL & Analytics",
+    icon: "🗄️",
+    description: "Consultas, modelagem analítica, qualidade de dados e transformação de bases operacionais em visão gerencial.",
+    skills: ["SQL", "ETL", "Data Quality", "KPIs"],
+    metric: "60%",
+    metricLabel: "Queries otimizadas",
+  },
+];
+
+export const caseStudies = [
+  {
+    id: 1,
+    title: "Automação de Vagas & Networking",
+    description:
+      "Pipeline semi-automático para buscar vagas, pontuar compatibilidade, gerar currículos em PDF, montar CRM e preparar networking com aprovação humana.",
+    category: "Python, CRM & automação",
+    icon: "🤖",
+    features: ["Python", "APIs", "PDF", "CRM", "Logs"],
+    impact: "Reduz trabalho manual e padroniza decisões de candidatura com rastreabilidade.",
+    flow: ["Coleta", "Score", "PDF", "CRM", "Aprovação"],
+    iframeSrc: "",
+  },
+  {
+    id: 2,
+    title: "ERP para BI Operacional",
+    description:
+      "Transformação de dados de TOTVS, ERPs proprietários, ABR Telecom e sistemas internos em bases analíticas, KPIs e relatórios gerenciais.",
+    category: "ERP, SQL & indicadores",
+    icon: "🏢",
+    features: ["TOTVS", "ABR Telecom", "SQL", "CSV/API", "KPIs"],
+    impact: "Conecta a origem operacional do dado à visão executiva sem expor informações sensíveis.",
+    flow: ["Extração", "Tratamento", "Validação", "Modelo", "Indicadores"],
+    iframeSrc: "",
+  },
+  {
+    id: 3,
+    title: "Dashboards Power BI Avançados",
+    description:
+      "Layouts executivos com DAX, Power Query, Deneb e HTML Content, usando dados anonimizados para preservar confidencialidade sem perder a qualidade visual.",
+    category: "Power BI, Deneb & HTML Content",
+    icon: "📊",
+    features: ["Power BI", "DAX", "Deneb", "HTML Content", "UX"],
+    impact: "Melhora leitura gerencial, prioriza anomalias e torna o dashboard mais acionável.",
+    flow: ["Modelo", "DAX", "Visual", "Interação", "Storytelling"],
+    iframeSrc: "",
+  },
+  {
+    id: 4,
+    title: "Chatbot com API Python",
+    description:
+      "Arquitetura para chatbot conectado a API Python, regras de negócio, logs e consulta a bases estruturadas para apoiar fluxos internos.",
+    category: "API, chatbot & dados",
+    icon: "💬",
+    features: ["Python", "API", "Chatbot", "Validações", "Logs"],
+    impact: "Automatiza respostas e organiza solicitações recorrentes com controle e auditoria.",
+    flow: ["Pergunta", "API", "Regra", "Consulta", "Resposta"],
+    iframeSrc: "",
   },
 ];
 
@@ -51,11 +143,13 @@ export const workExperience = [
     highlights: [
       "Processamento de +500K registros/mês com Python (pandas, PySpark)",
       "12+ dashboards executivos em Power BI com DAX avançado",
+      "Criação de visuais avançados com Deneb e HTML Content para leitura operacional",
+      "Análise de dados de ERP, sistemas internos e plataformas operacionais",
       "Automação de pipelines ETL — eliminando ~20h mensais de trabalho manual",
       "Otimização de queries SQL complexas — redução de 60% no tempo de execução",
       "Implementação de rotinas de Data Quality — -30% em inconsistências",
     ],
-    tags: ["Power BI", "Python", "SQL", "ETL", "DAX"],
+    tags: ["Power BI", "Python", "SQL", "ERP", "Deneb", "HTML Content"],
   },
   {
     id: 2,
@@ -79,9 +173,10 @@ export const workExperience = [
     highlights: [
       "+200 incidentes/mês resolvidos via CLI — 99.5% de uptime",
       "15+ rotinas automatizadas com Bash, PowerShell e Python",
+      "Apoio à leitura de dados operacionais e integrações de sistemas de telecom",
       "Documentação de SOPs — redução de 50% no onboarding",
     ],
-    tags: ["Redes", "Bash", "PowerShell", "Python", "TCP/IP"],
+    tags: ["Redes", "Bash", "PowerShell", "Python", "ABR Telecom", "TCP/IP"],
   },
   {
     id: 4,

@@ -17,10 +17,10 @@ const Contact = () => {
             Vamos <span className="text-blue-400">Conversar?</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-4">
-            Precisa transformar dados em decisões estratégicas? Vamos discutir como posso contribuir.
+            Aberto a oportunidades em Análise de Dados, BI, automações Python, SQL e projetos com dados de ERP.
           </p>
           <p className="text-slate-500 text-sm mb-10">
-            Aberto a oportunidades em Análise de Dados, BI e Data Engineering.
+            Perfil voltado a times que precisam transformar operação, sistemas internos e bases dispersas em indicadores confiáveis.
           </p>
         </motion.div>
 

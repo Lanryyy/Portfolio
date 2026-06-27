@@ -1,43 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { focusAreas } from '@/Data';
 
 const DataStats = () => {
-  const areas = [
-    {
-      title: "Business Intelligence",
-      icon: "📊",
-      description: "Dashboards executivos e relatórios estratégicos com Power BI e DAX avançado",
-      skills: ["Power BI", "DAX", "Tableau", "KPIs"],
-      metric: "12+",
-      metricLabel: "Dashboards",
-    },
-    {
-      title: "Análise de Dados",
-      icon: "🐍",
-      description: "Processamento e análise com Python para insights que embasam decisões de negócio",
-      skills: ["Python", "pandas", "PySpark", "NumPy"],
-      metric: "500K+",
-      metricLabel: "Registros/mês",
-    },
-    {
-      title: "ETL & Automação",
-      icon: "⚡",
-      description: "Pipelines de dados automatizados — da extração à visualização executiva",
-      skills: ["ETL/ELT", "SQL", "Automação", "Data Pipeline"],
-      metric: "20h",
-      metricLabel: "Salvas/mês",
-    },
-    {
-      title: "Infraestrutura & Redes",
-      icon: "🔧",
-      description: "Background em infraestrutura de telecomunicações e monitoramento proativo",
-      skills: ["TCP/IP", "CLI", "Bash", "PowerShell"],
-      metric: "99.5%",
-      metricLabel: "Uptime",
-    },
-  ];
-
   return (
     <section className="py-20" id="about">
       <div className="max-w-7xl mx-auto px-5">
@@ -52,14 +18,14 @@ const DataStats = () => {
             Áreas de <span className="text-blue-400">Atuação</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Visão end-to-end do pipeline de dados — da extração à tomada de decisão
+            Da origem operacional do dado à automação, análise e visualização executiva.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {areas.map((area, index) => (
+          {focusAreas.map((area, index) => (
             <motion.div
-              key={index}
+              key={area.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -90,9 +56,9 @@ const DataStats = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-1.5 mt-auto">
-                  {area.skills.map((skill, skillIndex) => (
+                  {area.skills.map((skill) => (
                     <span
-                      key={skillIndex}
+                      key={skill}
                       className="px-2 py-1 text-[10px] rounded-md bg-white/[0.05] text-slate-400 border border-white/[0.08] font-medium"
                     >
                       {skill}
