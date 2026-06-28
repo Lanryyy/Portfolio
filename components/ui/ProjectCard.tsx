@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export interface ProjectCardProps {
@@ -9,9 +10,13 @@ export interface ProjectCardProps {
   category: string;
   icon: string;
   iframeSrc?: string;
+  previewImage?: string;
+  previewAlt?: string;
   features: string[];
   flow: string[];
   impact: string;
+  proofPoints?: string[];
+  buildDetails?: string[];
   index: number;
   onClick: () => void;
 }
@@ -22,9 +27,13 @@ export const ProjectCard = ({
   category,
   icon,
   iframeSrc,
+  previewImage,
+  previewAlt,
   features,
   flow,
   impact,
+  proofPoints,
+  buildDetails,
   index,
   onClick,
 }: ProjectCardProps) => {
@@ -46,6 +55,24 @@ export const ProjectCard = ({
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(34,211,238,0.12),transparent_34%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_30%)] opacity-70" />
 
         <div className="relative z-10 flex h-full flex-col">
+          {previewImage && (
+            <div className="relative aspect-video overflow-hidden border-b border-white/10 bg-slate-950">
+              <Image
+                src={previewImage}
+                alt={previewAlt || `Preview anonimizado de ${title}`}
+                fill
+                priority={index < 3}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover opacity-90 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 to-transparent p-4">
+                <span className="rounded-full border border-emerald-400/25 bg-emerald-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-300">
+                  Preview anonimizado
+                </span>
+              </div>
+            </div>
+          )}
+
           <div className="p-6 border-b border-white/5">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-3xl">
@@ -62,6 +89,19 @@ export const ProjectCard = ({
               {description}
             </p>
           </div>
+
+          {proofPoints && proofPoints.length > 0 && (
+            <div className="grid grid-cols-2 gap-2 border-b border-white/5 px-6 py-4 sm:grid-cols-5">
+              {proofPoints.map((point) => (
+                <span
+                  key={point}
+                  className="rounded-xl border border-blue-400/15 bg-blue-500/10 px-2 py-2 text-center text-[11px] font-semibold text-blue-200"
+                >
+                  {point}
+                </span>
+              ))}
+            </div>
+          )}
 
           <div className="px-6 py-5">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">
@@ -95,6 +135,22 @@ export const ProjectCard = ({
               ))}
             </div>
           </div>
+
+          {buildDetails && buildDetails.length > 0 && (
+            <div className="px-6 pb-6">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                Como foi construído
+              </p>
+              <ul className="space-y-2">
+                {buildDetails.map((detail) => (
+                  <li key={detail} className="flex gap-2 text-sm leading-relaxed text-slate-400">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
+                    <span>{detail}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div className="mt-auto border-t border-white/5 bg-white/[0.04] p-6">
             <p className="mb-4 text-sm leading-relaxed text-slate-300">

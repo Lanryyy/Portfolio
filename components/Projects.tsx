@@ -28,14 +28,14 @@ const Projects = () => {
           Cases selecionados
         </div>
         <h2 className="heading text-white mb-4">
-          Automação, ERP, SQL e{" "}
+          Dashboards, Automação, ERP e{" "}
           <span className="text-blue-400">
             BI Avançado
           </span>
         </h2>
         <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-          Projetos organizados para mostrar como transformo dados operacionais em processos automatizados,
-          análises confiáveis e dashboards executivos com segurança de informação.
+          Cases com previews anonimizados, contexto de construção, stack e impacto.
+          Os layouts preservam a estrutura visual dos PBIX sem expor dados reais.
         </p>
       </motion.div>
 

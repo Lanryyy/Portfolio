@@ -1,114 +1,62 @@
-# 📊 Henry Matheus — Dashboard CV | Analista de Dados & BI
+# Henry Matheus — Portfolio de Dados, BI e Automações
 
-> Portfólio interativo em formato de Dashboard CV, demonstrando habilidades de análise de dados e visualização na prática.
+Portfolio profissional em Next.js para apresentar atuação em Análise de Dados, Power BI, Python, SQL, ERP, automações e dashboards operacionais.
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=flat-square&logo=tailwindcss)
-![Power BI](https://img.shields.io/badge/Power%20BI-Embedded-F2C811?style=flat-square&logo=powerbi)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square&logo=vercel)
+[Live demo](https://portfolio-modern-1.vercel.app)
 
-## 🔗 Live Demo
+## Foco do Portfolio
 
-**[portfolio-modern-1.vercel.app](https://portfolio-modern-1.vercel.app)**
+- Automação de processos com Python, APIs, arquivos e logs.
+- Dashboards Power BI com DAX, Power Query, Deneb e HTML Content.
+- Dados operacionais de ERP, sistemas proprietários, ABR Telecom e bases internas.
+- SQL, ETL, qualidade de dados e indicadores de operação.
 
----
+## Cases
 
-## 📖 Sobre
+| Case | Destaque |
+| --- | --- |
+| Automação de Vagas & Networking | Pipeline semi-automático com score, PDF, CRM, logs e aprovação humana |
+| Dashboard Call Center Massivo | Power BI operacional com DAX, HTML Content, Deneb e análise de falhas |
+| Dashboard CENSUP | Atendimento, produtividade, tags, filas e acompanhamento por filtros |
+| Dashboard Provisionamento | Tickets, demandas, filas, tags, produtividade e tempos de resolução |
+| ERP para BI Operacional | Transformação de dados de TOTVS, ERPs proprietários e sistemas internos em KPIs |
+| Chatbot com API Python | Arquitetura de chatbot conectado a regras, API, logs e bases estruturadas |
 
-Este não é um portfólio convencional — é um **Dashboard CV** que apresenta minha trajetória profissional no formato que eu conheço melhor: dados e visualização.
+## Segurança dos Dashboards
 
-### Conceito
+Os previews dos dashboards no portfolio são anonimizados. Eles foram gerados a partir da estrutura visual dos PBIX, mas sem publicar dados reais, nomes, IDs, valores, fontes, URLs internas ou metadados sensíveis.
 
-O próprio design do site demonstra minhas habilidades como Analista de Dados:
-- **Métricas quantificáveis** no hero (500K+ registros, 12+ dashboards)
-- **Dashboards reais** do Power BI embarcados e interativos
-- **Timeline visual** da carreira com indicadores de impacto
-- **Skills categorizadas** por domínio (Dados & BI, Programação, Cloud)
+Os arquivos PBIX originais não são versionados neste repositório. Cópias de trabalho para higienização ficam fora do projeto público.
 
----
-
-## 🚀 Stack Técnica
+## Stack
 
 | Camada | Tecnologia |
-|--------|-----------|
-| **Framework** | Next.js 14 (App Router) |
-| **Linguagem** | TypeScript |
-| **Estilização** | Tailwind CSS 3.4 |
-| **Animações** | Framer Motion |
-| **BI Embarcado** | Power BI Embedded (iframe) |
-| **Deploy** | Vercel (CI/CD automático) |
-| **Fontes** | Inter, Outfit, JetBrains Mono |
+| --- | --- |
+| Framework | Next.js 14 |
+| Linguagem | TypeScript |
+| Estilo | Tailwind CSS |
+| Animações | Framer Motion |
+| BI | Power BI, DAX, Power Query, Deneb, HTML Content |
+| Deploy | Vercel |
 
----
-
-## 📊 Seções
-
-| Seção | Descrição |
-|-------|-----------|
-| **Hero** | Métricas de impacto animadas + identidade profissional |
-| **Resumo** | Síntese da experiência com keywords estratégicas |
-| **Áreas de Atuação** | Cards com métricas por área de expertise |
-| **Competências** | Skills categorizadas por domínio (sem barras de %) |
-| **Dashboards BI** | 3 dashboards Power BI interativos embarcados |
-| **Carreira** | Timeline visual com métricas quantificáveis |
-| **Formação** | Educação com badges de status |
-| **Contato** | Cards de contato + download de currículo |
-
----
-
-## 🛠️ Executar Localmente
+## Desenvolvimento Local
 
 ```bash
-# Clone
-git clone https://github.com/Lanryyy/Portfolio.git
-cd Portfolio
-
-# Instale dependências
 npm install
-
-# Execute em desenvolvimento
 npm run dev
 ```
 
-Acesse [http://localhost:3000](http://localhost:3000)
+Acesse `http://localhost:3000`.
 
----
+## Validação
 
-## 📁 Estrutura
-
-```
-Portfolio/
-├── app/
-│   ├── layout.tsx          # Layout + SEO metadata
-│   ├── page.tsx            # Página principal
-│   └── globals.css         # Design tokens
-├── components/
-│   ├── Main.tsx            # Hero com métricas
-│   ├── Grid.tsx            # Resumo profissional
-│   ├── DataStats.tsx       # Áreas de atuação
-│   ├── Skills.tsx          # Competências categorizadas
-│   ├── Projects.tsx        # Dashboards Power BI
-│   ├── Experiencia.tsx     # Timeline de carreira
-│   ├── Educacao.tsx        # Formação acadêmica
-│   ├── Contact.tsx         # Contato e CV
-│   ├── Footer.tsx          # Rodapé
-│   └── ui/                 # Componentes UI reutilizáveis
-├── Data/
-│   └── index.ts            # Dados centralizados
-└── public/                 # Assets estáticos
+```bash
+npm run lint
+npm run build
 ```
 
----
+## Contato
 
-## 📬 Contato
-
-- **Email:** contatohenrymath@hotmail.com
-- **LinkedIn:** [henry-matheus](https://www.linkedin.com/in/henry-matheus-611828192/)
-- **Portfólio:** [portfolio-modern-1.vercel.app](https://portfolio-modern-1.vercel.app)
-
----
-
-## 📄 Licença
-
-MIT License — veja [LICENSE](LICENSE) para detalhes.
+- Email: `contatohenrymath@hotmail.com`
+- LinkedIn: [henry-matheus](https://www.linkedin.com/in/henry-matheus-611828192/)
+- GitHub: [Lanryyy](https://github.com/Lanryyy)
