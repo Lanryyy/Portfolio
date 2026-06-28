@@ -1,0 +1,182 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Análise de Atendentes - preview anonimizado</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7fb"/>
+      <stop offset="0.52" stop-color="#fff1f6"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f00668"/>
+      <stop offset="1" stop-color="#c90056"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#db2777" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#f9a8d4" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#dots)"/>
+  <circle cx="1130" cy="178" r="168" fill="#fde68a" opacity="0.23"/>
+  <circle cx="140" cy="140" r="118" fill="#f9a8d4" opacity="0.22"/>
+  <circle cx="1000" cy="626" r="140" fill="#fbcfe8" opacity="0.35"/>
+
+  <rect x="20" y="20" width="1240" height="86" rx="18" fill="#fff8fb" stroke="#f9a8d4" stroke-width="1.2" filter="url(#shadow)"/>
+  <rect x="20" y="20" width="1240" height="7" rx="4" fill="url(#accent)"/>
+  <rect x="38" y="36" width="112" height="55" rx="8" fill="url(#accent)"/>
+  <text x="72" y="73" fill="white" font-size="30" font-family="Segoe UI, Arial" font-weight="900">vero</text>
+  <text x="168" y="64" fill="#12162f" font-size="28" font-family="Segoe UI, Arial" font-weight="900">Análise de Atendentes</text>
+  <text x="169" y="84" fill="#746879" font-size="13" font-family="Segoe UI, Arial" font-weight="700">Desempenho, falhas e recorrência por responsável</text>
+
+  <g font-family="Segoe UI, Arial">
+    <rect x="485" y="36" width="200" height="55" rx="10" fill="#fff" stroke="#f9a8d4"/>
+    <text x="528" y="59" fill="#342a3b" font-size="12" font-weight="800">Data</text>
+    <text x="505" y="80" fill="#111827" font-size="13">01/03/2026  -  30/06/2026</text>
+    <circle cx="512" cy="61" r="11" fill="#fce7f3" stroke="#f00668"/>
+
+    <rect x="695" y="36" width="162" height="55" rx="10" fill="#fff" stroke="#f9a8d4"/>
+    <text x="737" y="59" fill="#342a3b" font-size="12" font-weight="800">Regional</text>
+    <text x="719" y="79" fill="#111827" font-size="13">Todos</text>
+    <path d="M823 67l8 8 8-8" stroke="#111827" stroke-width="1.4"/>
+    <circle cx="716" cy="61" r="11" fill="#fce7f3" stroke="#f00668"/>
+
+    <rect x="867" y="36" width="162" height="55" rx="10" fill="#fff" stroke="#f9a8d4"/>
+    <text x="909" y="59" fill="#342a3b" font-size="12" font-weight="800">Atendente</text>
+    <text x="891" y="79" fill="#111827" font-size="13">Todos</text>
+    <path d="M995 67l8 8 8-8" stroke="#111827" stroke-width="1.4"/>
+    <circle cx="888" cy="61" r="11" fill="#fce7f3" stroke="#f00668"/>
+
+    <rect x="1039" y="36" width="183" height="55" rx="10" fill="#fff" stroke="#f9a8d4"/>
+    <text x="1082" y="59" fill="#342a3b" font-size="12" font-weight="800">Origem da falha</text>
+    <text x="1063" y="79" fill="#111827" font-size="13">Todos</text>
+    <path d="M1188 67l8 8 8-8" stroke="#111827" stroke-width="1.4"/>
+    <circle cx="1060" cy="61" r="11" fill="#fce7f3" stroke="#f00668"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial">
+    <g transform="translate(24 128)">
+      <rect width="238" height="96" rx="16" fill="#fff" stroke="#f9a8d4" filter="url(#shadow)"/>
+      <rect x="24" y="28" width="50" height="50" rx="14" fill="url(#accent)"/>
+      <text x="88" y="47" fill="#e0005b" font-size="12" font-weight="900">TOTAL DE CASOS</text>
+      <text x="88" y="66" fill="#746879" font-size="12" font-weight="700">Casos analisados</text>
+      <text x="178" y="67" fill="#12162f" font-size="34" font-weight="900">742</text>
+    </g>
+    <g transform="translate(283 128)">
+      <rect width="208" height="96" rx="16" fill="#fff" stroke="#f9a8d4" filter="url(#shadow)"/>
+      <rect x="22" y="28" width="50" height="50" rx="14" fill="url(#accent)"/>
+      <text x="86" y="47" fill="#e0005b" font-size="12" font-weight="900">ATENDENTES</text>
+      <text x="86" y="66" fill="#746879" font-size="12" font-weight="700">Responsáveis</text>
+      <text x="154" y="67" fill="#12162f" font-size="34" font-weight="900">35</text>
+    </g>
+    <g transform="translate(512 128)">
+      <rect width="208" height="96" rx="16" fill="#fff" stroke="#f9a8d4" filter="url(#shadow)"/>
+      <rect x="22" y="28" width="50" height="50" rx="14" fill="url(#accent)"/>
+      <text x="91" y="47" fill="#2f2942" font-size="12" font-weight="900">FALHAS MAPEADAS</text>
+      <text x="94" y="69" fill="#12162f" font-size="34" font-weight="900">96</text>
+    </g>
+    <g transform="translate(741 128)">
+      <rect width="238" height="96" rx="16" fill="#fff" stroke="#f9a8d4" filter="url(#shadow)"/>
+      <rect x="24" y="28" width="50" height="50" rx="14" fill="url(#accent)"/>
+      <text x="92" y="45" fill="#e0005b" font-size="11" font-weight="900">MAIOR RECORRÊNCIA</text>
+      <text x="92" y="64" fill="#746879" font-size="11" font-weight="700">Mín. 3 casos</text>
+      <text x="173" y="66" fill="#12162f" font-size="30" font-weight="900">18%</text>
+    </g>
+    <g transform="translate(1000 128)">
+      <rect width="250" height="96" rx="16" fill="#fff" stroke="#f9a8d4" filter="url(#shadow)"/>
+      <rect x="24" y="28" width="50" height="50" rx="14" fill="url(#accent)"/>
+      <text x="88" y="45" fill="#e0005b" font-size="11" font-weight="900">MÉDIA POR ATENDENTE</text>
+      <text x="88" y="64" fill="#746879" font-size="11" font-weight="700">Distribuição geral</text>
+      <text x="184" y="66" fill="#12162f" font-size="32" font-weight="900">21,2</text>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI, Arial">
+    <rect x="24" y="248" width="350" height="345" rx="18" fill="#fff" stroke="#f9a8d4"/>
+    <rect x="44" y="273" width="50" height="50" rx="14" fill="url(#accent)"/>
+    <text x="110" y="291" fill="#12162f" font-size="17" font-weight="900">Atendentes com Mais Casos</text>
+    <text x="110" y="312" fill="#746879" font-size="12" font-weight="700">Ranking por volume total</text>
+    <g fill="#d9045d" font-size="13" font-weight="900">
+      <text x="44" y="352">1</text><text x="44" y="384">2</text><text x="44" y="416">3</text><text x="44" y="448">4</text><text x="44" y="480">5</text><text x="44" y="512">6</text><text x="44" y="544">7</text><text x="44" y="576">8</text>
+    </g>
+    <g fill="#12162f" font-size="13" font-weight="800">
+      <text x="75" y="352">Atendente 01</text><text x="75" y="384">Atendente 02</text><text x="75" y="416">Atendente 03</text><text x="75" y="448">Atendente 04</text><text x="75" y="480">Atendente 05</text><text x="75" y="512">Atendente 06</text><text x="75" y="544">Atendente 07</text><text x="75" y="576">Atendente 08</text>
+    </g>
+    <g fill="#fde7f0">
+      <rect x="178" y="340" width="160" height="13" rx="3"/><rect x="178" y="372" width="160" height="13" rx="3"/><rect x="178" y="404" width="160" height="13" rx="3"/><rect x="178" y="436" width="160" height="13" rx="3"/><rect x="178" y="468" width="160" height="13" rx="3"/><rect x="178" y="500" width="160" height="13" rx="3"/><rect x="178" y="532" width="160" height="13" rx="3"/><rect x="178" y="564" width="160" height="13" rx="3"/>
+    </g>
+    <g fill="#d9045d">
+      <rect x="178" y="340" width="142" height="13" rx="3"/><rect x="178" y="372" width="128" height="13" rx="3"/><rect x="178" y="404" width="116" height="13" rx="3"/><rect x="178" y="436" width="93" height="13" rx="3"/><rect x="178" y="468" width="82" height="13" rx="3"/><rect x="178" y="500" width="73" height="13" rx="3"/><rect x="178" y="532" width="66" height="13" rx="3"/><rect x="178" y="564" width="58" height="13" rx="3"/>
+    </g>
+
+    <rect x="390" y="248" width="490" height="345" rx="18" fill="#fff" stroke="#f9a8d4"/>
+    <rect x="412" y="281" width="50" height="50" rx="14" fill="url(#accent)"/>
+    <text x="488" y="302" fill="#12162f" font-size="17" font-weight="900">Evolução Mensal por Origem</text>
+    <text x="488" y="323" fill="#746879" font-size="12" font-weight="700">Casos analisados por mês</text>
+    <line x1="450" y1="534" x2="838" y2="534" stroke="#9ca3af"/>
+    <line x1="450" y1="340" x2="450" y2="534" stroke="#9ca3af"/>
+    <g fill="#12162f" font-size="13" font-weight="900">
+      <text x="498" y="562">MAR</text><text x="604" y="562">ABR</text><text x="710" y="562">MAI</text><text x="814" y="562">JUN</text>
+    </g>
+    <g>
+      <rect x="488" y="424" width="52" height="110" fill="#e0005b"/><rect x="488" y="390" width="52" height="34" fill="#f9a8d4"/><rect x="488" y="366" width="52" height="24" fill="#fbcfe8"/>
+      <rect x="598" y="404" width="52" height="130" fill="#e0005b"/><rect x="598" y="371" width="52" height="33" fill="#f9a8d4"/><rect x="598" y="343" width="52" height="28" fill="#fbcfe8"/>
+      <rect x="708" y="398" width="52" height="136" fill="#e0005b"/><rect x="708" y="365" width="52" height="33" fill="#f9a8d4"/><rect x="708" y="336" width="52" height="29" fill="#fbcfe8"/>
+      <rect x="818" y="510" width="52" height="24" fill="#e0005b"/><rect x="818" y="498" width="52" height="12" fill="#f9a8d4"/><rect x="818" y="488" width="52" height="10" fill="#fbcfe8"/>
+    </g>
+    <g font-size="11" font-weight="900">
+      <text x="500" y="360" fill="#12162f">Total: 174</text>
+      <text x="610" y="337" fill="#12162f">Total: 214</text>
+      <text x="720" y="330" fill="#12162f">Total: 228</text>
+      <text x="816" y="482" fill="#12162f">Total: 23</text>
+    </g>
+    <rect x="500" y="351" width="10" height="10" fill="#e0005b"/><text x="516" y="361" fill="#12162f" font-size="11" font-weight="700">Falha Operação</text>
+    <rect x="620" y="351" width="10" height="10" fill="#f9a8d4"/><text x="636" y="361" fill="#12162f" font-size="11" font-weight="700">Falha Sistema</text>
+    <rect x="742" y="351" width="10" height="10" fill="#fbcfe8"/><text x="758" y="361" fill="#12162f" font-size="11" font-weight="700">Não identificado</text>
+
+    <rect x="896" y="248" width="360" height="196" rx="18" fill="#fff" stroke="#f9a8d4"/>
+    <rect x="919" y="276" width="50" height="50" rx="14" fill="url(#accent)"/>
+    <text x="988" y="295" fill="#12162f" font-size="17" font-weight="900">Origem da Falha</text>
+    <text x="988" y="316" fill="#746879" font-size="12" font-weight="700">Participação no período</text>
+    <circle cx="1039" cy="366" r="56" fill="none" stroke="#e0005b" stroke-width="32" stroke-dasharray="230 352" transform="rotate(-90 1039 366)"/>
+    <circle cx="1039" cy="366" r="56" fill="none" stroke="#f9a8d4" stroke-width="32" stroke-dasharray="78 352" stroke-dashoffset="-230" transform="rotate(-90 1039 366)"/>
+    <circle cx="1039" cy="366" r="56" fill="none" stroke="#fbcfe8" stroke-width="32" stroke-dasharray="44 352" stroke-dashoffset="-308" transform="rotate(-90 1039 366)"/>
+    <circle cx="1039" cy="366" r="35" fill="#fff"/>
+    <rect x="1160" y="323" width="10" height="10" fill="#e0005b"/><text x="1178" y="331" fill="#12162f" font-size="12" font-weight="900">Operação</text><text x="1178" y="348" fill="#12162f" font-size="11">64%</text>
+    <rect x="1160" y="369" width="10" height="10" fill="#f9a8d4"/><text x="1178" y="377" fill="#12162f" font-size="12" font-weight="900">Sistema</text><text x="1178" y="394" fill="#12162f" font-size="11">9%</text>
+    <rect x="1160" y="414" width="10" height="10" fill="#fbcfe8"/><text x="1178" y="422" fill="#12162f" font-size="12" font-weight="900">Não ident.</text><text x="1178" y="439" fill="#12162f" font-size="11">27%</text>
+
+    <rect x="896" y="464" width="360" height="129" rx="18" fill="#fff" stroke="#f9a8d4"/>
+    <rect x="919" y="491" width="42" height="42" rx="12" fill="url(#accent)"/>
+    <text x="983" y="512" fill="#12162f" font-size="17" font-weight="900">Tendência do Atendente</text>
+    <text x="983" y="534" fill="#746879" font-size="12" font-weight="700">Casos por mês</text>
+    <rect x="1128" y="491" width="104" height="32" rx="9" fill="#fff" stroke="#f9a8d4"/>
+    <text x="1143" y="512" fill="#342a3b" font-size="11" font-weight="800">Selecionar</text>
+    <text x="1018" y="566" fill="#746879" font-size="13" font-weight="800">Selecione um atendente</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial">
+    <rect x="24" y="614" width="1232" height="82" rx="18" fill="#fff" stroke="#f9a8d4"/>
+    <rect x="42" y="637" width="42" height="42" rx="12" fill="url(#accent)"/>
+    <text x="101" y="651" fill="#12162f" font-size="17" font-weight="900">Detalhamento por Atendente</text>
+    <text x="101" y="671" fill="#746879" font-size="12" font-weight="700">Resumo dos principais indicadores com dados sintéticos</text>
+    <rect x="390" y="634" width="830" height="1" fill="#f9a8d4"/>
+    <g fill="#12162f" font-size="12" font-weight="900">
+      <text x="392" y="662">Atendente</text>
+      <text x="572" y="662">Total</text>
+      <text x="665" y="662">Sistema</text>
+      <text x="785" y="662">Operação</text>
+      <text x="920" y="662">Não ident.</text>
+      <text x="1050" y="662">% rastreável</text>
+      <text x="1168" y="662">Último caso</text>
+    </g>
+    <rect x="385" y="676" width="830" height="14" rx="7" fill="#fde7f0"/>
+    <rect x="1048" y="676" width="72" height="14" rx="7" fill="#e0005b"/>
+  </g>
+
+  <rect x="1058" y="57" width="104" height="1" fill="#f9a8d4"/>
+  <circle cx="1190" cy="59" r="4" fill="#e0005b"/>
+  <text x="1202" y="63" fill="#e0005b" font-family="Segoe UI, Arial" font-size="10" font-weight="900">DADOS SINTÉTICOS</text>
+</svg>

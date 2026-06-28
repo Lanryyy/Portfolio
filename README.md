@@ -17,7 +17,7 @@ Portfolio profissional em Next.js para apresentar atuação em Análise de Dados
 | --- | --- |
 | Automação de Vagas & Networking | Pipeline semi-automático com score, PDF, CRM, logs e aprovação humana |
 | Dashboard Call Center Massivo | Power BI operacional com DAX, HTML Content, Deneb e análise de falhas |
-| Dashboard CENSUP | Atendimento, produtividade, tags, filas e acompanhamento por filtros |
+| Análise de Atendentes | Desempenho por responsável, recorrência de falhas, origem dos casos e rastreabilidade |
 | Dashboard Provisionamento | Tickets, demandas, filas, tags, produtividade e tempos de resolução |
 | ERP para BI Operacional | Transformação de dados de TOTVS, ERPs proprietários e sistemas internos em KPIs |
 | Chatbot com API Python | Arquitetura de chatbot conectado a regras, API, logs e bases estruturadas |
